@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import logo from './logo.svg';
 // import './App.css';
 
@@ -19,6 +20,13 @@ function App() {
         </a>
       </header> */}
     </div>
+=======
+import OrderCom from './components/order';
+
+function App() {
+  return (
+   <OrderCom/>
+>>>>>>> c79a4595fa9984012b22d375dd388b1f752dd61f
   );
 }
 
