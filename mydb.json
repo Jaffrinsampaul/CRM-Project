@@ -1,0 +1,48 @@
+{
+    "customers": [
+        {
+            "firstname": "david",
+            "lastname": "boon",
+            "email": "david7@xyz.com",
+            "mobile": 98765
+        },
+        {
+            "firstname": "jaff",
+            "lastname": "sam",
+            "email": "jaff7@xyz.com",
+            "mobile": 12345
+        }
+    ],
+    "orders": [
+        {
+            "reference": "order-2-2-1-2",
+            "quantity": 2,
+            "amount": 9.99,
+            "customer": "david",
+            "orderdate": "2022-04-01",
+            "shippingdate": "2022-04-03"
+        },
+        {
+            "reference": "order-4-3-1-2",
+            "quantity": 1,
+            "amount": 5.99	,
+            "customer": "jaff",
+            "orderdate": "2022-04-02",
+            "shippingdate": "2022-04-04"
+        }
+    ],
+    "products": [
+        {
+            "productname": "Product HHYDP",
+            "categoryname": "Beverages",
+            "price": 23,
+            "totalstock": 10
+        },
+        {
+            "productname": "Product RECZE",
+            "categoryname": "Condiments",
+            "price": 40,
+            "totalstock": 3
+        }
+    ]
+}
