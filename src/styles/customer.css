@@ -1,0 +1,14 @@
+#customers {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    width: 100%;
+}
+#customers td, #customers th {
+border-bottom: 1px solid #ddd;
+padding: 8px 16px;
+}  
+#customers th {
+    padding: 8px 16px;
+    text-align: left;
+    color: black;
+    font-family: Helvetica;
+}

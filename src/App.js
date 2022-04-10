@@ -1,6 +1,11 @@
-<<<<<<< HEAD
 import logo from './logo.svg';
-// import './App.css';
+import './App.css';
+import Customer from './components/customer'
+import ChartComp from './components/chart';
+
+import React from 'react';
+import DashBoard from './dashboard/dashboard';
+import AddCustomer from './components/addcustomer';
 
 function App() {
   return (
@@ -19,15 +24,12 @@ function App() {
           Learn React
         </a>
       </header> */}
+      {/* <Customer /> */}
+      {/* <ChartComp /> */}
+      <DashBoard />
+      {/* <AddCustomer /> */}
     </div>
-=======
-import OrderCom from './components/order';
-
-function App() {
-  return (
-   <OrderCom/>
->>>>>>> c79a4595fa9984012b22d375dd388b1f752dd61f
-  );
+  )
 }
 
 export default App;
