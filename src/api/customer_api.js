@@ -2,7 +2,7 @@ import axios from 'axios';
 
 export async function CustomerList () {
     let customer;
-    await axios.get('http://localhost:3005/orders')
+    await axios.get('http://localhost:3005/customers')
     .then((res) => {
         // console.log(res.data);
         customer = res.data;

@@ -5,6 +5,10 @@ import ChartComp from './components/chart';
 
 import React from 'react';
 import DashBoard from './dashboard/dashboard';
+
+import DeleteAlert from './components/delete';
+import LandingPage from './components/landingPage';
+import {colors} from "./style/color"
 import AddCustomer from './components/addcustomer';
 
 function App() {
@@ -26,8 +30,11 @@ function App() {
       </header> */}
       {/* <Customer /> */}
       {/* <ChartComp /> */}
-      <DashBoard />
-      {/* <AddCustomer /> */}
+      {/* <DashBoard /> */}
+      {/* <LandingPage/> */}
+      {/* <DeleteAlert/> */}
+
+      <AddCustomer />
     </div>
   )
 }
