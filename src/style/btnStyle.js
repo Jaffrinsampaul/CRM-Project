@@ -2,7 +2,7 @@ import { colors } from "./color"
 
 export const styles ={
     fabBtnEdit:{
-        marginRight: "3rem",
+        marginRight: "1rem",
         color: colors.white,
         backgroundColor: colors.lightGreen,
     },
@@ -20,9 +20,17 @@ export const styles ={
         color: colors.white,
     },
     pagination:{
-        position: "fixed",
+        position: "absolute",
+        display: "flex",
+        justifyContent: "center",
         bottom: 0,
-        left: "50%"
+        alignItems: "center",
+        left: "35%"
+    },
+    filterList:{
+        color: "#f44336",
+        marginTop: "5px",
+        marginLeft: "10px"
     }
 
 }
