@@ -3,6 +3,8 @@ import "../style/table.css"
 import { deleteApi, getOrderDetails } from "../api/tableDetails";
 
 import {styles} from "../style/btnStyle"
+import { Devolpment } from "./devlopment";
+import DialogBox from "./delete";
 
 import { Fab } from "@mui/material";
 import SearchIcon from '@mui/icons-material/Search';
@@ -21,9 +23,10 @@ const TableDisplay =(props)=>{
     const [noOfPages ,setNoofPage] = useState();
     const [isReload, setReload] =useState(false)
     
-    const itemPerPage = 7
+    const itemPerPage = 6
     const fetchTableData = props.tableDetail
     const istrue = props.isTrue
+    let captialFetchData = fetchTableData.charAt(0).toUpperCase() + fetchTableData.slice(1)
 
     useEffect(()=>{
         
@@ -47,7 +50,13 @@ const TableDisplay =(props)=>{
         //         setReload(true)
         //     }
         // })
-        DeleteAlert()
+        // DeleteAlert()
+        <DialogBox/>
+        console.log("here")
+    }
+
+    const handelDevlopment =()=>{
+        Devolpment()
     }
 
    <BrowserRouter>
@@ -58,10 +67,11 @@ const TableDisplay =(props)=>{
 
     return(
         <section >
+            <h4 id="navHeader">React CRM/{captialFetchData}</h4>
             {
-                <section id={ istrue === "true"? "containerTrue": "container" }>
+                <section id="container">
 
-                <h1>{fetchTableData.charAt(0).toUpperCase() + fetchTableData.slice(1)} ({order.length})</h1>
+                <h1>{captialFetchData} ({order.length})</h1>
 
                 <table id="table">
                     <thead>
@@ -78,7 +88,7 @@ const TableDisplay =(props)=>{
                                             }
                                         })
                                     }
-                                    <th colSpan={2}>Action</th> 
+                                    <th colSpan={1}>Action</th> 
                                 </tr>
                                 }
                             })
@@ -98,24 +108,29 @@ const TableDisplay =(props)=>{
                                         })
                                     }
                                     <td>
-                                        <Fab size="small"  style={styles.fabBtnEdit}><CreateIcon value= {obj["id"]} id ="btn1"/></Fab>
+                                        <Fab size="small"  style={styles.fabBtnEdit}><CreateIcon value= {obj["id"]} id ="btn1"
+                                            onClick= {handelDevlopment} 
+                                        /></Fab>
                                         <Fab size="small" style={styles.fabtnDelete}><DeleteIcon value= {obj["id"]} id ="btn2" 
-                                            onClick ={(e)=>{handleDelete(e, obj["id"])}} 
-                                            // onClick={<DeleteAlert/>}
+                                            onClick ={(e)=>{handleDelete(e, obj["id"])}}
                                         /></Fab>
                                     </td>
+                                    {/* <td>
+                                    
+                                    </td> */}
                                 </tr>
                             })
                         }
                     </tbody>
-                    <Pagination 
-                            count={noOfPages}
-                            page={page}
-                            defaultPage={1} 
-                            style={styles.pagination} 
-                            onChange={handlePagination}
-                    />
+                    
                 </table>
+                <Pagination 
+                    count={noOfPages}
+                    page={page}
+                    defaultPage={1} 
+                    style={styles.pagination} 
+                    onChange={handlePagination}
+                />
                     
                 <section id="fixedContainer">
                     <Fab size="small" style={styles.fabBtnSearch}><SearchIcon/></Fab>
