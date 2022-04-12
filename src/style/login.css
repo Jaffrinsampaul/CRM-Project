@@ -1,0 +1,19 @@
+#welcomeTag{
+    position: relative;
+    top: 40px;
+    text-align: center;
+    font-size: 30px;
+}
+#loginCard{
+    background-color: white;
+    position: relative;
+    top: 100px;
+    left: 25%;
+    height: 50vh;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    border-radius: 10px;
+}

@@ -1,436 +1,378 @@
 {
-    "customers":
-    [
-    { 
-        "id": 1, 
-        "firstname": "Larsen", 
-        "lastname": "Shaw", 
-        "email": "abc@test.com", 
-        "mobile": "555-555-555",
-        "membership": "Silver"
+  "customers": [
+    {
+      "id": 2,
+      "firstname": "Rosseta",
+      "lastname": "Wilson",
+      "email": "test@test.com",
+      "mobile": "555-555-555",
+      "membership": "Silver"
     },
-    
-    { 
-        "id": 2, 
-        "firstname": "Rosseta", 
-        "lastname": "Wilson", 
-        "email": "test@test.com",
-        "mobile": "555-555-555",
-        "membership": "Silver"
-    }, 
-          
-    { 
-               
-        "id": 3, 
-        "firstname": "William", 
-        "lastname": "Carney", 
-        "email": "test@test.com",
-        "mobile": "555-555-555",  
-        "membership": "Gold"
+    {
+      "id": 3,
+      "firstname": "William",
+      "lastname": "Carney",
+      "email": "test@test.com",
+      "mobile": "555-555-555",
+      "membership": "Gold"
     },
-
-    {  
-                 
-        "id": 4, 
-        "firstname": "Sarah", 
-        "lastname": "Dunne", 
-        "email": "test@test.com",
-        "mobile": "555-555-555", 
-        "membership": "Gold"
-    }, 
-        
-    {  
-                   
-                   
-        "id": 5, 
-        "firstname": "Merriana", 
-        "lastname": "Sean", 
-        "email": "test@test.com",
-        "mobile": "555-555-555",
-        "membership": "Silver"
+    {
+      "id": 4,
+      "firstname": "Sarah",
+      "lastname": "Dunne",
+      "email": "test@test.com",
+      "mobile": "555-555-555",
+      "membership": "Gold"
     },
-                    
-    { 
-                        
-                         
-        "id": 6, 
-        "firstname": "Jubino", 
-        "lastname": "Gerret", 
-        "email": "test@test.com",
-        "mobile": "555-555-555",
-        "membership":   "Gold"
+    {
+      "id": 5,
+      "firstname": "Merriana",
+      "lastname": "Sean",
+      "email": "test@test.com",
+      "mobile": "555-555-555",
+      "membership": "Silver"
     },
-
-    {  
-                            
-                            
-        "id": 7, 
-        "firstname": "Geneva", 
-        "lastname": "Wilson", 
-        "email": "test@test.com",
-        "mobile": "555-555-555", 
-        "membership": "Gold"
+    {
+      "id": 6,
+      "firstname": "Jubino",
+      "lastname": "Gerret",
+      "email": "test@test.com",
+      "mobile": "555-555-555",
+      "membership": "Gold"
     },
-    
-    {  
-                                 
-                                
-        "id": 8, 
-        "firstname": "Mark", 
-        "lastname": "Carney", 
-        "email": "test@test.com",
-        "mobile": "555-555-555",
-        "membership": "Platinum"
-    }, 
-                                
-    { 
-                             
-                                 
-        "id": 9, 
-        "firstname": "Yann", 
-        "lastname": "Larrel", 
-        "email": "test@test.com",
-        "mobile": "555-555-555",
-        "membership": "Emerald"
+    {
+      "id": 7,
+      "firstname": "Geneva",
+      "lastname": "Wilson",
+      "email": "test@test.com",
+      "mobile": "555-555-555",
+      "membership": "Gold"
     },
-    
-    {    
-         "id": 10, 
-        "firstname": "John", 
-        "lastname": "Doe", 
-        "email": "john.doe@test.com",
-        "mobile": "555-555-555",
-        "membership": "Platinum" 
-                                     
-    }, 
-    
-    {      
-        "id": 11,
-        "firstname": "sdfsdf", 
-        "lastname": "sdfsdf", 
-        "email": "sdfsdfsdfs", 
-        "mobile": "555-555-555",
-        "membership": "Silver"
-            
+    {
+      "id": 8,
+      "firstname": "Mark",
+      "lastname": "Carney",
+      "email": "test@test.com",
+      "mobile": "555-555-555",
+      "membership": "Platinum"
+    },
+    {
+      "id": 9,
+      "firstname": "Yann",
+      "lastname": "Larrel",
+      "email": "test@test.com",
+      "mobile": "555-555-555",
+      "membership": "Emerald"
+    },
+    {
+      "id": 10,
+      "firstname": "John",
+      "lastname": "Doe",
+      "email": "john.doe@test.com",
+      "mobile": "555-555-555",
+      "membership": "Platinum"
+    },
+    {
+      "id": 11,
+      "firstname": "sdfsdf",
+      "lastname": "sdfsdf",
+      "email": "sdfsdfsdfs",
+      "mobile": "555-555-555",
+      "membership": "Silver"
     }
-    ],
-   
-    "orders":
-    [
+  ],
+  "orders": [
     {
-        "id":1,
-        "reference":"order-2-2-1-2",
-        "quantity":"2",
-        "amount":"9.99",
-        "customer":"Larsen",
-        "Order Date":"2017-01-01",
-        "Shipping date":"2017-01-01"
-
+      "id": 1,
+      "reference": "order-2-2-1-2",
+      "quantity": "2",
+      "amount": "9.99",
+      "customer": "Larsen",
+      "Order Date": "2017-01-01",
+      "Shipping date": "2017-01-01"
     },
     {
-        "id":2,
-        "reference":"order-4-4-1-2",
-        "quantity":"2",
-        "amount":"499.99",
-        "customer":"Rosseta",
-        "Order Date":"2017-01-01",
-        "Shipping date":"2017-01-01"
-
+      "id": 2,
+      "reference": "order-4-4-1-2",
+      "quantity": "2",
+      "amount": "499.99",
+      "customer": "Rosseta",
+      "Order Date": "2017-01-01",
+      "Shipping date": "2017-01-01"
     },
-       
     {
-        "id":3,
-        "reference":"order-5-5-1-2",
-        "quantity":"1",
-        "amount":"399.99",
-        "customer":"William",
-        "Order Date":"2017-01-01",
-        "Shipping date":"2017-01-01"
-
+      "id": 3,
+      "reference": "order-5-5-1-2",
+      "quantity": "1",
+      "amount": "399.99",
+      "customer": "William",
+      "Order Date": "2017-01-01",
+      "Shipping date": "2017-01-01"
     },
-       
     {
-        "id":4,
-        "reference":"order-8-8-1-2",
-        "quantity":"1",
-        "amount":"89.99",
-        "customer":"Merriana",
-        "Order Date":"2017-01-01",
-        "Shipping date":"2017-01-01"
-
+      "id": 4,
+      "reference": "order-8-8-1-2",
+      "quantity": "1",
+      "amount": "89.99",
+      "customer": "Merriana",
+      "Order Date": "2017-01-01",
+      "Shipping date": "2017-01-01"
     },
-       
     {
-        "id":5,
-        "reference":"order-6-6-1-2",
-        "quantity":"1",
-        "amount":"329.99",
-        "customer":"Sarah",
-        "Order Date":"2017-01-01",
-        "Shipping date":"2017-06-01"
-
+      "id": 5,
+      "reference": "order-6-6-1-2",
+      "quantity": "1",
+      "amount": "329.99",
+      "customer": "Sarah",
+      "Order Date": "2017-01-01",
+      "Shipping date": "2017-06-01"
     },
-       
     {
-        "id":6,
-        "reference":"order-2-2-1-2",
-        "quantity":"2",
-        "amount":"9.99",
-        "customer":"david",
-        "Order Date":"2017-01-01",
-        "Shipping date":"2017-01-01"
-
+      "id": 6,
+      "reference": "order-2-2-1-2",
+      "quantity": "2",
+      "amount": "9.99",
+      "customer": "david",
+      "Order Date": "2017-01-01",
+      "Shipping date": "2017-01-01"
     },
-       
     {
-        "id":7,
-        "reference":"order-2-2-1-2",
-        "quantity":"2",
-        "amount":"39.99",
-        "customer":"alpha",
-        "Order Date":"2017-01-01",
-        "Shipping date":"2017-01-01"
-
+      "id": 7,
+      "reference": "order-2-2-1-2",
+      "quantity": "2",
+      "amount": "39.99",
+      "customer": "alpha",
+      "Order Date": "2017-01-01",
+      "Shipping date": "2017-01-01"
     },
-       
     {
-        "id":8,
-        "reference":"order-2-2-1-2",
-        "quantity":"2",
-        "amount":"59.99",
-        "customer":"abrar",
-        "Order Date":"2017-01-01",
-        "Shipping date":"2017-01-01"
-
+      "id": 8,
+      "reference": "order-2-2-1-2",
+      "quantity": "2",
+      "amount": "59.99",
+      "customer": "abrar",
+      "Order Date": "2017-01-01",
+      "Shipping date": "2017-01-01"
     },
-       
     {
-        "id":9,
-        "reference":"order-2-2-1-2",
-        "quantity":"2",
-        "amount":"19.99",
-        "customer":"Nayan",
-        "Order Date":"2017-01-01",
-        "Shipping date":"2017-01-01"
-
+      "id": 9,
+      "reference": "order-2-2-1-2",
+      "quantity": "2",
+      "amount": "19.99",
+      "customer": "Nayan",
+      "Order Date": "2017-01-01",
+      "Shipping date": "2017-01-01"
     },
-       
     {
-        "id":10,
-        "reference":"order-2-2-1-2",
-        "quantity":"2",
-        "amount":"12.99",
-        "customer":"John",
-        "Order Date":"2017-01-01",
-        "Shipping date":"2017-01-01"
-
+      "id": 10,
+      "reference": "order-2-2-1-2",
+      "quantity": "2",
+      "amount": "12.99",
+      "customer": "John",
+      "Order Date": "2017-01-01",
+      "Shipping date": "2017-01-01"
     },
-       
     {
-        "id":11,
-        "reference":"order-11-15-1-2",
-        "quantity":"2",
-        "amount":"222",
-        "customer":"Mark",
-        "Order Date":"2017-01-19",
-        "Shipping date":"2017-01-16"
-
+      "id": 11,
+      "reference": "order-11-15-1-2",
+      "quantity": "2",
+      "amount": "222",
+      "customer": "Mark",
+      "Order Date": "2017-01-19",
+      "Shipping date": "2017-01-16"
     },
-       
     {
-        "id":12,
-        "reference":"ss-2-22-22",
-        "quantity":"2",
-        "amount":"2323",
-        "customer":"Rosseta",
-        "Order Date":"2017-08-08",
-        "Shipping date":"2017-01-01"
-
+      "id": 12,
+      "reference": "ss-2-22-22",
+      "quantity": "2",
+      "amount": "2323",
+      "customer": "Rosseta",
+      "Order Date": "2017-08-08",
+      "Shipping date": "2017-01-01"
     }
-],
-    
-    "products": 
-    [
-    { 
-    "id": 1, 
-    "Product name": "Product shoes", 
-    "category name":"sports", 
-    "Price": 21.5 ,
-    "TotalInStock":12 
-    }, 
-    { 
-    "id": 2, 
-    "Product name": "Product Sandals", 
-    "category name":"cosmetics", 
-    "Price": 210.5 ,
-    "TotalInStock":17 
-    }, 
-    { 
-    "id": 3, 
-    "Product name": "Product Shirts", 
-    "category name":"cloths", 
-    "Price": 210.5 ,
-    "TotalInStock":18 
-    },
-    { 
-    "id": 4, 
-    "Product name": "Product Pen", 
-    "category name":"Stationary", 
-    "Price": 210.5 ,
-    "TotalInStock":23 
+  ],
+  "products": [
+    {
+      "id": 1,
+      "Product name": "Product shoes",
+      "category name": "sports",
+      "Price": 21.5,
+      "TotalInStock": 12
     },
     {
-    "id": 5, 
-    "Product name": "Product Paper", 
-    "category name":"Stationary", 
-    "Price": 210.5 ,
-    "TotalInStock":23 
+      "id": 2,
+      "Product name": "Product Sandals",
+      "category name": "cosmetics",
+      "Price": 210.5,
+      "TotalInStock": 17
     },
-    { 
-    "id": 6, 
-    "Product name": "Product laptop ", 
-    "category name":"Electric Gadgets", 
-    "Price": 210.5 ,
-    "TotalInStock":23 
+    {
+      "id": 3,
+      "Product name": "Product Shirts",
+      "category name": "cloths",
+      "Price": 210.5,
+      "TotalInStock": 18
     },
-    { 
-    "id": 7, 
-    "Product name": "Product chocolates ", 
-    "category name":"Snacks", 
-    "Price": 210.5 ,
-    "TotalInStock":23 
+    {
+      "id": 4,
+      "Product name": "Product Pen",
+      "category name": "Stationary",
+      "Price": 210.5,
+      "TotalInStock": 23
     },
-    { 
-    "id": 8, 
-    "Product name": "Product Food ", 
-    "category name":"VEG Foods", 
-    "Price": 210.5 ,
-    "TotalInStock":23 
+    {
+      "id": 5,
+      "Product name": "Product Paper",
+      "category name": "Stationary",
+      "Price": 210.5,
+      "TotalInStock": 23
     },
-    { 
-    "id": 9, 
-    "Product name": "Product HockeyStick", 
-    "category name":"Sports", 
-    "Price": 210.5 ,
-    "TotalInStock":27
+    {
+      "id": 6,
+      "Product name": "Product laptop ",
+      "category name": "Electric Gadgets",
+      "Price": 210.5,
+      "TotalInStock": 23
     },
-    { 
-    "id": 10, 
-    "Product name": "Product Footballs ", 
-    "category name":"Games", 
-    "Price": 210.5 ,
-    "TotalInStock":23 
+    {
+      "id": 7,
+      "Product name": "Product chocolates ",
+      "category name": "Snacks",
+      "Price": 210.5,
+      "TotalInStock": 23
     },
-    { 
-    "id": 11, 
-    "Product name": "Product CricketBat", 
-    "category name":"Sports", 
-    "Price": 210.5 ,
-    "TotalInStock":15 
-    }, 
-    { 
-    "id": 12, 
-    "Product name": "Product NoteBooks", 
-    "category name":"Stationary", 
-    "Price": 210.5 ,
-    "TotalInStock":20
-    }, 
-    { 
-    "id": 13, 
-    "Product name": "Product SmartWatch ", 
-    "category name":"ElectricGadgets", 
-    "Price": 215.5 ,
-    "TotalInStock":23
+    {
+      "id": 8,
+      "Product name": "Product Food ",
+      "category name": "VEG Foods",
+      "Price": 210.5,
+      "TotalInStock": 23
     },
-    { 
-    "id": 14, 
-    "Product name": "Product MobilePhones", 
-    "category name":"Electronic", 
-    "Price": 210.5 ,
-    "TotalInStock":22
+    {
+      "id": 9,
+      "Product name": "Product HockeyStick",
+      "category name": "Sports",
+      "Price": 210.5,
+      "TotalInStock": 27
     },
-    { 
-    "id": 15, 
-    "Product name": "Product NoteBooks", 
-    "category name":"Stationary", 
-    "Price": 210.5 ,
-    "TotalInStock":27
+    {
+      "id": 10,
+      "Product name": "Product Footballs ",
+      "category name": "Games",
+      "Price": 210.5,
+      "TotalInStock": 23
     },
-    { 
-    "id": 16, 
-    "Product name": "Product Computer", 
-    "category name":"Electrical Gadgets", 
-    "Price": 210.5 ,
-    "TotalInStock":28
+    {
+      "id": 11,
+      "Product name": "Product CricketBat",
+      "category name": "Sports",
+      "Price": 210.5,
+      "TotalInStock": 15
     },
-    { 
-    "id": 17, 
-    "Product name": "Product Bags", 
-    "category name":"Stationary", 
-    "Price": 215.50,
-    "TotalInStock":20
+    {
+      "id": 12,
+      "Product name": "Product NoteBooks",
+      "category name": "Stationary",
+      "Price": 210.5,
+      "TotalInStock": 20
     },
-    { 
-    "id": 18, 
-    "Product name": "Product WaterBottles", 
-    "category name":"Stationary", 
-    "Price": 215.50,
-    "TotalInStock":20
+    {
+      "id": 13,
+      "Product name": "Product SmartWatch ",
+      "category name": "ElectricGadgets",
+      "Price": 215.5,
+      "TotalInStock": 23
     },
-    { 
-    "id": 19, 
-    "Product name": "Product Ring", 
-    "category name":"Jewellery", 
-    "Price": 126215.50,
-    "TotalInStock":20
+    {
+      "id": 14,
+      "Product name": "Product MobilePhones",
+      "category name": "Electronic",
+      "Price": 210.5,
+      "TotalInStock": 22
     },
-    { 
-    "id": 20, 
-    "Product name": "Product Chain", 
-    "category name":"Jewellery", 
-    "Price": 234215.50,
-    "TotalInStock":20
+    {
+      "id": 15,
+      "Product name": "Product NoteBooks",
+      "category name": "Stationary",
+      "Price": 210.5,
+      "TotalInStock": 27
     },
-    { 
-    "id": 21, 
-    "Product name": "Product Pendrive", 
-    "category name":"Electronics", 
-    "Price": 45215.50,
-    "TotalInStock":20
+    {
+      "id": 16,
+      "Product name": "Product Computer",
+      "category name": "Electrical Gadgets",
+      "Price": 210.5,
+      "TotalInStock": 28
     },
-    { 
-    "id": 22, 
-    "Product name": "Product Pencil", 
-    "category name":"Stationary", 
-    "Price": 4215.50,
-    "TotalInStock":200
+    {
+      "id": 17,
+      "Product name": "Product Bags",
+      "category name": "Stationary",
+      "Price": 215.5,
+      "TotalInStock": 20
     },
-    { 
-    "id": 23, 
-    "Product name": "Product PowerBank", 
-    "category name":"Electronics", 
-    "Price": 215.50,
-    "TotalInStock":20
+    {
+      "id": 18,
+      "Product name": "Product WaterBottles",
+      "category name": "Stationary",
+      "Price": 215.5,
+      "TotalInStock": 20
     },
-    { 
-    "id": 24, 
-    "Product name": "Product Books", 
-    "category name":"Stationary", 
-    "Price": 215.50,
-    "TotalInStock":20
+    {
+      "id": 19,
+      "Product name": "Product Ring",
+      "category name": "Jewellery",
+      "Price": 126215.5,
+      "TotalInStock": 20
     },
-    { 
-    "id": 25, 
-    "Product name": "Product Sketch", 
-    "category name":"Stationary", 
-    "Price": 215.50,
-    "TotalInStock":20
+    {
+      "id": 20,
+      "Product name": "Product Chain",
+      "category name": "Jewellery",
+      "Price": 234215.5,
+      "TotalInStock": 20
     },
-    { 
-    "id": 26, 
-    "Product name": "Product fruits", 
-    "category name":"Beverages", 
-    "Price": 215.50,
-    "TotalInStock":"29kg"
+    {
+      "id": 21,
+      "Product name": "Product Pendrive",
+      "category name": "Electronics",
+      "Price": 45215.5,
+      "TotalInStock": 20
+    },
+    {
+      "id": 22,
+      "Product name": "Product Pencil",
+      "category name": "Stationary",
+      "Price": 4215.5,
+      "TotalInStock": 200
+    },
+    {
+      "id": 23,
+      "Product name": "Product PowerBank",
+      "category name": "Electronics",
+      "Price": 215.5,
+      "TotalInStock": 20
+    },
+    {
+      "id": 24,
+      "Product name": "Product Books",
+      "category name": "Stationary",
+      "Price": 215.5,
+      "TotalInStock": 20
+    },
+    {
+      "id": 25,
+      "Product name": "Product Sketch",
+      "category name": "Stationary",
+      "Price": 215.5,
+      "TotalInStock": 20
+    },
+    {
+      "id": 26,
+      "Product name": "Product fruits",
+      "category name": "Beverages",
+      "Price": 215.5,
+      "TotalInStock": "29kg"
     }
-]}
+  ]
+}

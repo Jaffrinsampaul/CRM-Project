@@ -4,7 +4,6 @@ import { deleteApi, getOrderDetails } from "../api/tableDetails";
 
 import {styles} from "../style/btnStyle"
 import { Devolpment } from "./devlopment";
-import DialogBox from "./delete";
 
 import { Fab } from "@mui/material";
 import SearchIcon from '@mui/icons-material/Search';
@@ -13,8 +12,8 @@ import PersonIcon from '@mui/icons-material/Person';
 import { Pagination } from "@mui/material";
 import CreateIcon from '@mui/icons-material/Create';
 import DeleteIcon from '@mui/icons-material/Delete';
-import DeleteAlert from "./delete";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import DialogBox from "./delete";
+
 
 const TableDisplay =(props)=>{
 
@@ -22,10 +21,10 @@ const TableDisplay =(props)=>{
     const [page, setPage]= useState(1)
     const [noOfPages ,setNoofPage] = useState();
     const [isReload, setReload] =useState(false)
+    const [openDialog, setOpenDialog] =useState(true)
     
     const itemPerPage = 6
     const fetchTableData = props.tableDetail
-    const istrue = props.isTrue
     let captialFetchData = fetchTableData.charAt(0).toUpperCase() + fetchTableData.slice(1)
 
     useEffect(()=>{
@@ -43,27 +42,16 @@ const TableDisplay =(props)=>{
         setPage(value)
     }
 
-    const handleDelete =(e, value)=>{
-        // deleteApi(fetchTableData,value).then((res)=>{
-
-        //     if(res === "OK"){
-        //         setReload(true)
-        //     }
-        // })
-        // DeleteAlert()
-        <DialogBox/>
-        console.log("here")
+    const handleDelete =(clickAction, deleteData)=>{
+        if(clickAction === "agree" ){
+            deleteApi(fetchTableData,deleteData)
+            setReload(true)
+        }
     }
 
     const handelDevlopment =()=>{
         Devolpment()
     }
-
-   <BrowserRouter>
-    <Routes>
-        <Route path= {`/${fetchTableData}/deleteAlert`} element={<DeleteAlert />} />
-    </Routes>
-   </BrowserRouter>
 
     return(
         <section >
@@ -111,9 +99,13 @@ const TableDisplay =(props)=>{
                                         <Fab size="small"  style={styles.fabBtnEdit}><CreateIcon value= {obj["id"]} id ="btn1"
                                             onClick= {handelDevlopment} 
                                         /></Fab>
-                                        <Fab size="small" style={styles.fabtnDelete}><DeleteIcon value= {obj["id"]} id ="btn2" 
+                                        <Fab size="small" style={styles.fabtnDelete}>
+                                            {/* <DeleteIcon value= {obj["id"]} id ="btn2" 
                                             onClick ={(e)=>{handleDelete(e, obj["id"])}}
-                                        /></Fab>
+                                            // onClick ={(e)=>{<ResponsiveDialog dialogOpen="open"/>}}
+                                        /> */}
+                                        <DialogBox value= {obj["id"]} method={handleDelete}/>
+                                        </Fab>
                                     </td>
                                     {/* <td>
                                     
@@ -122,7 +114,6 @@ const TableDisplay =(props)=>{
                             })
                         }
                     </tbody>
-                    
                 </table>
                 <Pagination 
                     count={noOfPages}

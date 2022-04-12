@@ -7,8 +7,11 @@ import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
+import DeleteIcon from '@mui/icons-material/Delete';
+import { colors } from '../style/color';
+import {styles} from "../style/btnStyle"
 
-export default function ResponsiveDialog() {
+export default function DialogBox(props) {
   const [open, setOpen] = React.useState(false);
   const theme = useTheme();
   const fullScreen = useMediaQuery(theme.breakpoints.down('md'));
@@ -16,16 +19,17 @@ export default function ResponsiveDialog() {
   const handleClickOpen = () => {
     setOpen(true);
   };
-
-  const handleClose = () => {
-    setOpen(false);
-  };
   
+  const handleClose = (e) => {
+    const value = e.target.id
+    const deletedData = props.value
+    setOpen(false);
+    props.method(value, deletedData)
+  };
   return (
     <div>
-      <Button variant="outlined" onClick={handleClickOpen}>
-        Open responsive dialog
-      </Button>
+      <DeleteIcon onClick={handleClickOpen} style={styles.fabtnDeleteIcon}>
+      </DeleteIcon>
       <Dialog
         fullScreen={fullScreen}
         open={open}
@@ -33,19 +37,23 @@ export default function ResponsiveDialog() {
         aria-labelledby="responsive-dialog-title"
       >
         <DialogTitle id="responsive-dialog-title">
-          {"Use Google's location service?"}
+          {"Action Alter"}
         </DialogTitle>
         <DialogContent>
           <DialogContentText>
-            Let Google help apps determine location. This means sending anonymous
-            location data to Google, even when no apps are running.
+            Are you sure to delete this data?
           </DialogContentText>
         </DialogContent>
         <DialogActions>
-          <Button autoFocus onClick={handleClose}>
+        {/* <Button variant="outlined" color="error"> */}
+          <Button  variant="outlined" style={{backgroundColor:colors.darkBlue, 
+            color: colors.white, borderRadius: "10px"}} id="disagree"
+            autoFocus onClick={handleClose}>
             Disagree
           </Button>
-          <Button onClick={handleClose} autoFocus>
+          <Button style={{backgroundColor:colors.darkPink, 
+            color: colors.white, borderRadius: "10px"}}  id="agree"
+            onClick={handleClose} autoFocus>
             Agree
           </Button>
         </DialogActions>

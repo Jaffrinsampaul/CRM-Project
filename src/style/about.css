@@ -1,0 +1,26 @@
+#about{
+    text-align: center;
+    background-color: white;
+    position: relative;
+    top: 40px;
+    height: 74vh;
+    padding-top: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+#header{
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+#subHeading{
+    font-size: 20px;
+    color: #009688;
+    padding-bottom: 20px;
+}
+#paragraph{
+    padding-left: 30px;
+    padding-right: 20px;
+    text-align: left;
+}

@@ -11,6 +11,9 @@ export const styles ={
         backgroundColor: colors.darkGrey,
         color: colors.lightGrey,
     },
+    fabtnDeleteIcon:{
+        marginTop: "5px"
+    },
     fabBtnSearch:{
         marginRight: "3.5rem",
         backgroundColor: colors.lightBlue,
@@ -31,6 +34,24 @@ export const styles ={
         color: "#f44336",
         marginTop: "5px",
         marginLeft: "10px"
-    }
+    },
+    inputFields:{
+        width: "70%",
+        marginTop: "50px",
+        marginLeft: "10px",
 
+        position : "relative",
+        left: "15%",
+    },
+    LoginBtn:{
+        width: "50%",
+        marginLeft: "10px",
+        marginBottom: "20px",
+        color: colors.white,
+        
+        position : "absolute",
+        left: "25%",
+        bottom: "30px"
+    },
+    // agre
 }

@@ -1,8 +1,9 @@
 import {React, useState } from "react"
 // import "../style/sideBar.css"
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import TableDisplay from "./table";
+import DashBoard from "../dashboard/dashboard";
 import NavBar from "./navBar";
 import  {styles} from "../style/btnStyle"
 import { Devolpment } from "./devlopment";
@@ -12,12 +13,23 @@ import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined
 import InsertChartIcon from '@mui/icons-material/InsertChart';
 import AddBusinessOutlinedIcon from '@mui/icons-material/AddBusinessOutlined';
 import FilterListRoundedIcon from '@mui/icons-material/FilterListRounded';
+import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
+import About from "./about";
+import { useEffect } from "react";
 
 
 
 const Sidebar = (props) => {
 
     const [isShowNav, setIsShowNav] =useState(true)
+    const [logOut, setLogOut] =useState(false)
+    const Navigate = useNavigate()
+
+    useEffect(()=>{
+        if(!localStorage.getItem("loginSuccess")){
+            Navigate("/")
+        }
+    },[logOut])
 
     const tableDetail = props.tableDetail
 
@@ -27,6 +39,7 @@ const Sidebar = (props) => {
         {Path:"/product", fileName: "Product", icons: <PersonOutlineOutlinedIcon className="iconBtn"/>},
         {Path:"/customer", fileName: "Customer", icons: <ShoppingCartOutlinedIcon className="iconBtn" />},
         {Path:"/order", fileName: "Order", icons: < AddBusinessOutlinedIcon  className="iconBtn"/>},
+        {Path:"/about", fileName: "About", icons: < InfoOutlinedIcon  className="iconBtn"/>},
         
     ]
 
@@ -39,8 +52,10 @@ const Sidebar = (props) => {
         }
     }
 
-    const handelDevlopment =()=>{
-        Devolpment()
+    const handelLogout =()=>{
+       localStorage.removeItem("loginSuccess", false)
+       alert("Thanks Visiting")
+       setLogOut(true)
     }
     
     return(
@@ -51,7 +66,7 @@ const Sidebar = (props) => {
                     <span className="sideBarHeaderBgd">
                             <img src={require('../asset/cat.png')} alt="Profile"/>
                             Admin
-                            <FilterListRoundedIcon style={styles.filterList} onClick={handelDevlopment}/>
+                            <FilterListRoundedIcon style={styles.filterList} onClick={handelLogout}/>
                         </span>
                     
                     </nav>
@@ -59,7 +74,7 @@ const Sidebar = (props) => {
                     <nav id="sideBarBody">
                         {
                             pageRouting.map((obj, index)=>{
-                                return <section className="sideBarContent">
+                                return <section key={index} className="sideBarContent">
                                     <>{obj.icons}</>
                                     <Link className="achorTag" to={obj.Path} key={index}>{obj.fileName}</Link>
                                 </section> 
@@ -69,13 +84,19 @@ const Sidebar = (props) => {
                 </div>
                 <section id="testStyle">
                     <NavBar hiddenNav = {handleNavBarChange}/>
-                    <TableDisplay tableDetail={tableDetail}/>
-
+                    {
+                        tableDetail==="dashboard"?<DashBoard/>: tableDetail ==="about"? <About/>:<TableDisplay tableDetail={tableDetail}/>
+                    }
+                   
+                   {/* <TableDisplay tableDetail={tableDetail}/> */}
                 </section>
             </section>:
                 <section>
                     <NavBar hiddenNav = {handleNavBarChange}/>
-                    <TableDisplay tableDetail={tableDetail}/>
+                    {
+                        tableDetail==="dashboard"?<DashBoard/>: tableDetail ==="about"? <About/>:<TableDisplay tableDetail={tableDetail}/>
+                    }
+                    {/* <TableDisplay tableDetail={tableDetail}/> */}
                 </section>
                     
             
