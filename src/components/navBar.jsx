@@ -78,10 +78,6 @@ const NavBar = (props) => {
                             <h5>Demo</h5>
                             <GitHubIcon id="github" />
                         </section>
-                            <TableDisplay isTrue="true" tableDetail={tableDetail}/>
-                    </section>
-                </>
-            }
             </section>
     )
 
